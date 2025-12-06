@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="p_11_events_style.css">
+</head>
+<body>
+<button onclick="console.log('button was clicked'); alert('hello')">click me !</button>
+<!-- when click on button : that will be print in console -->
+ <!-- notice: here, you single quotation.  -->
+<!-- EVENT HANDLING: on mouse click which work we done , that we called event handling. -->
+
+<button ondblclick="console.log('button was clicked')">click me 2 times!</button>
+<!-- onmouseover: when mouse hober the element automatic print the given text -->
+<!-- <div onmouseover="console.log('you are inside div.')">this is a box</div> -->
+
+<!-- handle the div : inside the javascript -->
+ <div> this is a box for </div>
+
+<!--  till now what will done : that is inline event handling:  ,
+  this is not useful or correct way.  -->
+  <!-- ======================== -->
+<!-- correct way: use :
+ node.event =()=> { //handle here }
+-->
+<button id="btn1">please! click me</button>
+<button id="btn2">please! click me btn2</button>
+<button id="btn3">please! click me btn3</button>
+
+<button id="btn4">please! click me btn4</button>
+<button id="mode">toggle btn</button>
+
+<p>Welcome to my website</p>
+<script src="p_11_events.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+<link rel="stylesheet" href="p_12_building_game_style.css">
+</head>
+<body>
+
+<!-- TOPIC:(vviipp) BUILDING GAME: Stone, PAPER,Scissors -->
+
+ <h1>Rock Paper Scissors</h1>
+<!-- 1️⃣ Rock (পাথর) জেতে Scissors (কাঁচি)-এর বিরুদ্ধে
+
+কারণ: পাথর কাঁচি ভেঙে দিতে পারে।
+
+2️⃣ Scissors (কাঁচি) জেতে Paper (কাগজ)-এর বিরুদ্ধে
+
+কারণ: কাঁচি কাগজ কেটে দিতে পারে।
+
+3️⃣ Paper (কাগজ) জেতে Rock (পাথর)-এর বিরুদ্ধে
+
+কারণ: কাগজ পাথরকে ঢেকে ফেলতে পারে। -->
+
+ <div class="choices">
+      <div class="choice" id="rock">
+        <img src="./images/rock.png" />
+      </div>
+      <div class="choice" id="paper">
+        <img src="./images/paper.png" />
+      </div>
+      <div class="choice" id="scissors">
+        <img src="./images/scissors.png" />
+      </div>
+    </div>
+
+    <!-- create score board: store use and computer score   -->
+    <div class="score-board">
+      <div class="score">
+        <p id="user-score">0</p>
+        <p>You</p>
+      </div>
+      <div class="score">
+        <p id="comp-score">0</p>
+        <p>Comp</p>
+      </div>
+    </div>
+
+    <div class="msg-container">
+      <p id="msg">Play your move</p>
+    </div>
+
+     </div>
+<script src="p_12_building_game.js"></script>
+</body>
+</html>
