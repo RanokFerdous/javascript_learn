@@ -516,7 +516,8 @@ console.log("State:", trafficLight.getState());
 
 console.log("\n--- Common Pitfalls ---");
 
-// Pitfall 1: Unintended sharing
+// Pitfall 1: Unintended sharing (DON'T DO THIS)
+// This demonstrates a common mistake with var in closures
 let createCounters = function() {
   let counters = [];
   for (var i = 0; i < 3; i++) {

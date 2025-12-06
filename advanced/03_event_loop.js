@@ -527,7 +527,8 @@ console.log("This runs first");
 // BAD:
 function badAsync() {
   return new Promise((resolve) => {
-    fetch("api").then(data => {
+    // Wrapping promise in promise is unnecessary
+    fetch("https://api.example.com").then(data => {
       resolve(data);
     });
   });
@@ -535,7 +536,7 @@ function badAsync() {
 
 // GOOD:
 function goodAsync() {
-  return fetch("api");
+  return fetch("https://api.example.com");
 }
 
 // Pitfall 4: Not handling promise rejections

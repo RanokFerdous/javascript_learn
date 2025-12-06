@@ -150,7 +150,7 @@ class MathUtils {
     return Math.min(...numbers);
   }
   
-  static PI = 3.14159;
+  static PI = Math.PI;
 }
 
 // Call static methods on class (not instance)
